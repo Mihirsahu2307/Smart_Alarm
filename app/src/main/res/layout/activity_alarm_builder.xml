@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#FF0F0434"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Alarm Tag: "
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/alarm_tag_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/teal_700"
+                android:textColor="@color/teal_200"
+                android:textSize="22sp"
+                android:singleLine="true"
+                android:imeOptions="actionDone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Message: "
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/alarm_message_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/teal_700"
+                android:textColor="@color/teal_200"
+                android:textSize="22sp"
+                android:singleLine="true"
+                android:imeOptions="actionDone" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="Repeat:"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/mon_cb"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginRight="64dp"
+                android:paddingLeft="16dp"
+                android:text="Mon"/>
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/tue_cb"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:paddingLeft="16dp"
+                android:text="Tue"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/wed_cb"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginRight="64dp"
+                android:paddingLeft="16dp"
+                android:text="Wed"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/thu_cb"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:paddingLeft="16dp"
+                android:text="Thu"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/fri_cb"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginRight="64dp"
+                android:paddingLeft="16dp"
+                android:text="Fri"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/sat_cb"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:paddingLeft="16dp"
+                android:text="Sat"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/sun_cb"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="32dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginRight="64dp"
+                android:paddingLeft="16dp"
+                android:text="Sun"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/never_cb"
+                android:layout_width="32dp"
+                android:layout_height="32dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:paddingLeft="16dp"
+                android:text="Never"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/display_time_ll"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/time_picker_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:text="Set Time:"
+                style="@style/ButtonStyle"/>
+
+            <TextView
+                android:id="@+id/display_time_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#00BFFF"
+                android:text="12:00 AM"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardView_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/light_grey"
+            android:layout_marginBottom="32dp">
+            <Spinner
+                android:id="@+id/set_difficulty_spinner"
+                android:spinnerMode="dropdown"
+                android:theme="@style/Theme.AppCompat.Light"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:popupBackground="@color/light_grey"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="Cancel"
+                android:layout_marginRight="32dp"
+                style="@style/ButtonStyle"
+                android:textSize="24sp" />
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Add"
+                style="@style/ButtonStyle"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

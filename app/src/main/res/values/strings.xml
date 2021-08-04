@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Smart Alarm</string>
+    <string name="add_alarm">Add Alarm</string>
+    <string name="default_time">07:23 AM</string>
+    <string name="default_alarm_name">Default</string>
+    <string name="default_repeat_days">Repeats: Never</string>
+</resources>
